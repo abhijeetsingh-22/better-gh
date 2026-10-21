@@ -23,14 +23,6 @@ A Chrome extension that opens images and videos in GitHub issues, pull requests,
 1. Open `chrome://extensions` and turn on **Developer mode**.
 2. Click **Load unpacked** and select this folder.
 
-## Publish
-
-There is no build step. Zip the extension files and upload the zip to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole):
-
-```sh
-zip -r better-gh.zip manifest.json src icons
-```
-
 ## How it works
 
 - `src/content.js` intercepts clicks on media inside comments and collects the page's media for navigation.
